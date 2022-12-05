@@ -5,4 +5,13 @@ html {
     box-sizing: inherit;
    }
   
-  
+   .body{
+    background: rgb(168, 153, 47);
+   }
+.grid{
+display:grid;
+}  
+
+.grid__element{
+
+}
