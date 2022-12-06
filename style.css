@@ -7,11 +7,20 @@ html {
   
    .body{
     background: rgb(168, 153, 47);
+    color:black;
    }
+
 .grid{
-display:grid;
+display: grid;
+grid-template-columns: 1fr minmax(500px, 1fr);
+grid-template-rows: 100px 200px;
+column-gap: 16px;
+row-gap: 16px;
+
 }  
 
 .grid__element{
-
+background: rgb(55, 168, 163);
+padding: 20pxpx;
+color: aliceblue;
 }
