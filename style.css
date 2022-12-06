@@ -1,26 +1,42 @@
 html {
-    box-sizing: border-box;
-   }
-   *, *:before, *:after {
-    box-sizing: inherit;
-   }
-  
-   .body{
-    background: rgb(168, 153, 47);
-    color:black;
-   }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.grid {
+  display: grid;
+}
 
-.grid{
-display: grid;
-grid-template-columns: 1fr minmax(500px, 1fr);
-grid-template-rows: 100px 200px;
-column-gap: 16px;
-row-gap: 16px;
+.main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article . aside"
+    "footer footer footer";
+    grid-template-columns: 1fr 50px 200px;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+.body {
+  background: rgb(168, 153, 47);
+  color: black;
+}
 
-}  
+.header {
+  grid-area: header;
+}
 
-.grid__element{
-background: rgb(55, 168, 163);
-padding: 20pxpx;
-color: aliceblue;
+.article {
+  grid-area: article;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
 }
